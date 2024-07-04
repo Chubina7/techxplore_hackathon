@@ -13,7 +13,7 @@ export default function Item({ data }: Props) {
   return (
     <Link
       href={`/quizz?id=${id}`}
-      className="w-80 rounded-2xl p-3 bg-customPurpleLight flex flex-col hover:scale-105 transition-all duration-300"
+      className="w-full rounded-2xl p-3 bg-customPurpleLight text-customBrightWhite flex flex-col hover:scale-105 transition-all duration-300"
     >
       <div className="w-full flex justify-between items-center pb-4">
         <Icon src={icon} />
