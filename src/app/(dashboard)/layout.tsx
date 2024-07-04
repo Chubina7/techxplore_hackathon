@@ -1,3 +1,6 @@
+import Footer from "@/components/footer/Footer";
+import Header from "@/components/header/Header";
+
 type Props = Readonly<{
   children: React.ReactNode;
 }>;
@@ -5,9 +8,13 @@ type Props = Readonly<{
 export default function RootLayout({ children }: Props) {
   return (
     <>
-      <header>HEADER</header>
-      <main className="w-full min-h-screen">{children}</main>
-      <footer>FOOTER</footer>
+      <Header />
+      <div className="w-full h-full px-4">
+        <main className="bg-red-400 w-full max-w-screen-xl min-h-screen xl:mx-auto mt-14">
+          {children}
+        </main>
+      </div>
+      <Footer />
     </>
   );
 }
