@@ -6,15 +6,15 @@ import Suggestions from "../../components/home_page/suggestions_section/Suggesti
 export default function Home() {
   return (
     <>
-      <h1 className="text-3xl select-none">🚀 აქ რამე ძერსკი ფრაზა!</h1>
+      <h1 className="text-3xl select-none font-semibold">🚀 აქ რამე ძერსკი ფრაზა!</h1>
       <QuizzesSearch />
       <div className="w-full flex gap-5">
-        <div className="w-3/4 flex flex-col gap-4">
+        <div className="w-full flex flex-col gap-4">
           <Suggestions />
           <Populars />
           <Alls />
         </div>
-        <div className="w-full bg-customBrightWhite rounded-2xl"></div>
+        <div className="w-[40%] bg-customBrightWhite rounded-2xl"></div>
       </div>
     </>
   );

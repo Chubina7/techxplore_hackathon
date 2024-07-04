@@ -12,7 +12,7 @@ export default function Icon({ src }: Props) {
       alt="quizz_icon"
       width={144}
       height={144}
-      className="h-14 w-14 | bg-customWhite rounded-2xl"
+      className="h-14 w-14 | bg-customBrightWhite rounded-2xl"
     />
   );
 }
