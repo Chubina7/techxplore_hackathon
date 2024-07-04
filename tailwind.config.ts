@@ -10,6 +10,7 @@ const config: Config = {
     extend: {
       colors: {
         customWhite: "#D9D9D9",
+        customBrightWhite: "#FFFFFF",
         customPurpleLight: "#9D85F2",
         customPurpleDark: "#",
       },
