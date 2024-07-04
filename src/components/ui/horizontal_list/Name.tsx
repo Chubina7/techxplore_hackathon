@@ -1,4 +1,4 @@
-import Link from "next/link";
+import SeeAllBtn from "./SeeAllBtn";
 
 type Props = {
   titleName: string;
@@ -9,9 +9,7 @@ export default function Name({ seeAllLink, titleName }: Props) {
   return (
     <div className="w-full flex justify-between items-center">
       <h1 className="text-xl font-bold">{titleName}</h1>
-      <Link href={seeAllLink}>
-        <button>See all</button>
-      </Link>
+      <SeeAllBtn link={seeAllLink} />
     </div>
   );
 }

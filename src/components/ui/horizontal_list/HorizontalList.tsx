@@ -9,7 +9,7 @@ type Props = {
 
 export default function HorizontalList({ data, title, seeAllLink }: Props) {
   return (
-    <section className="w-full overflow-visible flex flex-col gap-2">
+    <section className="w-full overflow-visible flex flex-col gap-2 select-none">
       <Name seeAllLink={seeAllLink} titleName={title} />
       <QuizzesList list={data} />
     </section>

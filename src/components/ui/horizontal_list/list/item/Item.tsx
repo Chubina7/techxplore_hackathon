@@ -20,7 +20,7 @@ export default function Item({ data }: Props) {
         <Difficulty level={difficulty} />
       </div>
       <h1 className="text-lg font-semibold line-clamp-2">{name}</h1>
-      <Categories list={categories} />
+      <Categories data={categories} />
     </Link>
   );
 }
