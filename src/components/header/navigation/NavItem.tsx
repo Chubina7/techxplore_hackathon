@@ -16,8 +16,8 @@ export default function NavItem({ item }: Props) {
   return (
     <li
       className={`${
-        path === item.link ? "font-semibold" : "font-normal"
-      } transition-all duration-300`}
+        path === item.link ? "opacity-100" : "opacity-40"
+      } select-none font-semibold transition-all duration-300`}
     >
       <Link href={item.link}>{item.title}</Link>
     </li>
