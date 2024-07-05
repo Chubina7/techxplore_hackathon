@@ -1,3 +1,5 @@
+"use client";
+
 type Props = {
   handleModal: () => void;
   optionsList: Array<string>;
@@ -15,7 +17,10 @@ export default function Modal({ handleModal, optionsList, id }: Props) {
           key={idx}
           id={id}
           className="w-full px-3 py-1 hover:bg-customPurpleDark hover:text-customBrightWhite cursor-pointer truncate"
-          onClick={handleModal}
+          onClick={() => {
+            console.log("Selecting ", opt, idx);
+            handleModal();
+          }}
         >
           <h1 id={id}>{opt}</h1>
         </div>
