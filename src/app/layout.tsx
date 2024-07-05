@@ -19,7 +19,7 @@ export default function RootLayout({ children }: Props) {
   return (
     <html lang="en" className="scroll-hidden">
       <body
-        className={`${inter.className} relative bg-customWhite text-black w-full h-full`}
+        className={`${inter.className} relative bg-customWhite text-customPurpleDark w-full h-full`}
       >
         {children}
       </body>
