@@ -1,3 +1,10 @@
+import LeaderboardList from "../../../components/leaderboard_page/list/LeaderboardList";
+
 export default function LeaderboardPage() {
-  return <div>Leaderboard Page</div>;
+  return (
+    <>
+      <h1 className="text-3xl select-none font-semibold">🚀 ლიდერბორდი!</h1>
+      <LeaderboardList />
+    </>
+  );
 }

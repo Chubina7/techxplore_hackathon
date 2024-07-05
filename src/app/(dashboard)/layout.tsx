@@ -9,7 +9,7 @@ export default function RootLayout({ children }: Props) {
     <>
       <Header />
       <div className="w-full h-full px-4">
-        <main className="w-full max-w-screen-xl xl:mx-auto mt-14 py-4 flex flex-col gap-5">
+        <main className="w-full min-h-screen max-w-screen-xl xl:mx-auto pt-16 py-4 flex flex-col gap-5">
           {children}
         </main>
       </div>
