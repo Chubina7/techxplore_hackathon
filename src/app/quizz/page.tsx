@@ -1,7 +1,8 @@
 import HintInfoCard from "../../components/quizz_page/HintInfoCard";
-import QuizzCard from "../../components/quizz_page/quizz_card/QuizzCard";
+import InfoCard from "../../components/quizz_page/info_card/InfoCard";
 import ReturnButton from "../../components/quizz_page/ReturnButton";
 import { dummyQuizz } from "../../lib/DummyData";
+// import QuizzCard from "../../components/quizz_page/quizz_card/QuizzCard";
 
 export default function QuizzPage() {
   // retrieve quizz data
@@ -12,9 +13,13 @@ export default function QuizzPage() {
         <ReturnButton />
         <HintInfoCard />
       </div>
-      <QuizzCard
+      {/* <QuizzCard
         question={dummyQuizz.question}
         optionsList={dummyQuizz.options}
+      /> */}
+      <InfoCard
+        title={dummyQuizz.info.title}
+        description={dummyQuizz.info.description}
       />
     </main>
   );

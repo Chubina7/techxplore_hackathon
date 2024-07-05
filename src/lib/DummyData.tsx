@@ -109,6 +109,10 @@ export const dummydata: Array<IQuizzCard> = [
 ];
 
 export const dummyQuizz = {
+  info: {
+    title: "გართულებული ისტორია",
+    description: "🚀 ეს არის ქვიზის აღწერა",
+  },
   question: "რა მოხდა 1121 წელს?",
   options: [
     {
