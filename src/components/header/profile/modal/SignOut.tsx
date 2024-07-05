@@ -17,11 +17,12 @@ export default function SignOut({ handleModal }: Props) {
 
   return (
     <div
+      id="profile_modal"
       onClick={handleRouting}
       className="px-5 py-1 hover:bg-customPurpleDark hover:text-customBrightWhite transition-all duration-300 cursor-pointer flex justify-start items-center gap-2"
     >
-      <IoArrowForwardCircle size={20} />
-      <h1>Sign out</h1>
+      <IoArrowForwardCircle id="profile_modal" size={20} />
+      <h1 id="profile_modal">Sign out</h1>
     </div>
   );
 }

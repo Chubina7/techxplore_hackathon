@@ -17,11 +17,12 @@ export default function HelpCenter({ handleModal }: Props) {
 
   return (
     <div
+      id="profile_modal"
       onClick={handleRouting}
       className="px-5 py-1 hover:bg-customPurpleDark hover:text-customBrightWhite transition-all duration-300 cursor-pointer flex justify-start items-center gap-2"
     >
-      <IoHelpCircle size={20} />
-      <h1 className="">Help Center</h1>
+      <IoHelpCircle id="profile_modal" size={20} />
+      <h1 id="profile_modal">Help Center</h1>
     </div>
   );
 }
