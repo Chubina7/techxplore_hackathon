@@ -1,4 +1,4 @@
-import Filter from "../../../components/quizzes_page/filter/Filter";
+// import Filter from "../../../components/quizzes_page/filter/Filter";
 import Heading from "../../../components/quizzes_page/Heading";
 import List from "../../../components/quizzes_page/list/List";
 // import { dummydata } from "../../../lib/DummyData";
@@ -31,7 +31,7 @@ export default async function QuizzesPage({ searchParams }: Props) {
   return (
     <>
       <Heading query={searchParams.filter} />
-      <Filter />
+      {/* <Filter /> */}
       <List data={data} />
     </>
   );

@@ -1,5 +1,6 @@
 import Image from "next/image";
 import React from "react";
+import { dummydata } from "../../../../../lib/DummyData";
 
 type Props = {
   src: string;
@@ -8,7 +9,7 @@ type Props = {
 export default function Icon({ src }: Props) {
   return (
     <Image
-      src={src}
+      src={src !== "" ? src : dummydata[0].icon}
       alt="quizz_icon"
       width={144}
       height={144}

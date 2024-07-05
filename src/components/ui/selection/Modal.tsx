@@ -4,9 +4,15 @@ type Props = {
   handleModal: () => void;
   optionsList: Array<string>;
   id: string;
+  setterFunc: (value: string) => void;
 };
 
-export default function Modal({ handleModal, optionsList, id }: Props) {
+export default function Modal({
+  handleModal,
+  optionsList,
+  id,
+  setterFunc,
+}: Props) {
   return (
     <div
       className="absolute min-w-full -bottom-1 left-0 bg-customBrightWhite transform translate-y-[100%] overflow-hidden | rounded-2xl py-2"
@@ -18,7 +24,7 @@ export default function Modal({ handleModal, optionsList, id }: Props) {
           id={id}
           className="w-full px-3 py-1 hover:bg-customPurpleDark hover:text-customBrightWhite cursor-pointer truncate"
           onClick={() => {
-            console.log("Selecting ", opt, idx);
+            setterFunc(opt);
             handleModal();
           }}
         >
