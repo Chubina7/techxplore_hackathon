@@ -1,4 +1,4 @@
-import HintInfoCard from "../../components/quizz_page/HintInfoCard";
+import HelpIcon from "../../components/quizz_page/help_card/HelpIcon";
 import InfoCard from "../../components/quizz_page/info_card/InfoCard";
 import ReturnButton from "../../components/quizz_page/ReturnButton";
 import { dummyQuizz } from "../../lib/DummyData";
@@ -11,7 +11,7 @@ export default function QuizzPage() {
     <main className="w-full h-full min-h-screen flex flex-col gap-4 justify-start items-center p-5">
       <div className="w-full flex justify-between">
         <ReturnButton />
-        <HintInfoCard />
+        <HelpIcon />
       </div>
       {/* <QuizzCard
         question={dummyQuizz.question}
