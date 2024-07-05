@@ -5,3 +5,9 @@ interface IQuizzCard {
     categories: string;
     difficulty: string;
 }
+
+interface IQuizzAnswer {
+    id: number;
+    answer: string;
+}
+type IQuizzQuestion = any

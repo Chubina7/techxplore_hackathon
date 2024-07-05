@@ -12,7 +12,7 @@ const config: Config = {
         customWhite: "#D9D9D9",
         customBrightWhite: "#FFFFFF",
         customPurpleLight: "#9D85F2",
-        customPurpleDark: "#6a33ce",
+        customPurpleDark: "#2d1560",
       },
     }
   },

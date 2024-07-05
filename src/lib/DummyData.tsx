@@ -107,3 +107,25 @@ export const dummydata: Array<IQuizzCard> = [
     categories: "პროგრამირება",
   },
 ];
+
+export const dummyQuizz = {
+  question: "რა მოხდა 1121 წელს?",
+  options: [
+    {
+      id: 1,
+      answer: "პატარაგორის შელაპარაკება",
+    },
+    {
+      id: 2,
+      answer: "დიდგორის ბრძოლა",
+    },
+    {
+      id: 3,
+      answer: "დიდგორის მთის დაპყრობა",
+    },
+    {
+      id: 4,
+      answer: "არ ვიცი",
+    },
+  ],
+};

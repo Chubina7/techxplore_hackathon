@@ -1,12 +1,15 @@
 import Option from "./Option";
 
-export default function Answers() {
+type Props = {
+  data: Array<IQuizzAnswer>;
+};
+
+export default function Answers({ data }: Props) {
   return (
     <div className="flex flex-col gap-3">
-      <Option />
-      <Option />
-      <Option />
-      <Option />
+      {data.map((opt) => (
+        <Option key={opt.id} data={opt} />
+      ))}
     </div>
   );
 }
